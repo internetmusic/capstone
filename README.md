@@ -1,5 +1,13 @@
 # capstone
 
+## MYSQL COMMANDS
+
+### Create Database 
+```
+create database guestbook
+```
+
+### Create Table guests
 ```
 CREATE TABLE `guestbook`.`guests` (
   `guest id` INT NOT NULL,
@@ -9,6 +17,7 @@ CREATE TABLE `guestbook`.`guests` (
   PRIMARY KEY (`guest id`));
 ```
 
+### Insert a record into guests table 
 ```
 INSERT INTO `guestbook`.`guests` (`guest id`, `name`, `message`, `time`) VALUES ('1', 'hector', 'its a nice one', '1605187099');
 ```
