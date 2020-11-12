@@ -19,5 +19,6 @@ CREATE TABLE `guestbook`.`guests` (
 
 ### Insert a record into guests table 
 ```
-INSERT INTO `guestbook`.`guests` (`guest id`, `name`, `message`, `time`) VALUES ('1', 'hector', 'its a nice one', '1605187099');
+INSERT INTO `guestbook`.`guests` (`guest id`, `name`, `message`, `time`) 
+                         VALUES ('1', 'hector', 'its a nice one', '1605187099');
 ```
