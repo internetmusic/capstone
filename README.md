@@ -24,7 +24,7 @@ INSERT INTO `guestbook`.`guests` (`guest id`, `name`, `message`, `time`)
                          VALUES ('1', 'hector', 'its a nice one', '1605187099');
 ```
 
-## Node APP
+# Node APP - API's
 
 ### set up db configuration in the `config/db.config.js`
 ```
@@ -37,15 +37,17 @@ module.exports = {
 ```
 
 ### To run the application 
-
-`node index.js`
-
+```
+cd app
+npm i
+node index.js
+```
 ## API's
 
 #### Create Guest Records
 
 ```
-url: httplocalhost:3000/create`
+url: http://localhost:8000/create`
 
 type: Post
 
@@ -76,7 +78,7 @@ Output:
 #### Get guests list 
 
 ```
-url: httplocalhost:3000/guests`
+url: http://localhost:8000/guests`
 
 type: Get
 
@@ -110,4 +112,12 @@ Output:
   }
 ]
 ```
+# React APP - Frontend
 
+## To run the frontend application
+```
+cd frontend
+npm i
+npm run start
+```
+##### Frontend app will be hosted on `http://localhost:3000`
