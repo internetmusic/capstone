@@ -10,11 +10,12 @@ create database guestbook
 ### Create Table guests
 ```
 CREATE TABLE `guestbook`.`guests` (
-  `guest id` INT NOT NULL,
+  `guest id` INT(11) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
   `message` VARCHAR(45) NULL,
   `time` INT NULL,
   PRIMARY KEY (`guest id`));
+  
 ```
 
 ### Insert a record into guests table 
