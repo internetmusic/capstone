@@ -2,7 +2,6 @@ const sql = require("./db.js");
 
 // constructor
 const Guests = function(guests) {
-  this.guestid = guests.guestid;
   this.name = guests.name;
   this.message = guests.message;
   this.time = guests.time;
@@ -12,7 +11,7 @@ const Guests = function(guests) {
 
 Guests.create = (newGuests, result) => {
 
-  sql.query(`INSERT INTO guestbook.guests (guestid, name, message, time, email) VALUE (?,?,?,?,?)`, [newGuests.guestid, newGuests.name, newGuests.message,newGuests.time, newGuests.email], (err, res) => {
+  sql.query(`INSERT INTO guestbook.guests (name, message, time, email) VALUE (?,?,?,?)`, [newGuests.name, newGuests.message,newGuests.time, newGuests.email], (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(err, null);
