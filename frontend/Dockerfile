@@ -15,7 +15,7 @@ COPY package*.json ./
 RUN npm install
  
 # Copies everything over to Docker environment
-COPY . .
+COPY --chown=node:node . .
  
 # Uses port which is used by the actual application
 EXPOSE 3000
