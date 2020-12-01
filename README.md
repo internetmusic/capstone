@@ -121,3 +121,22 @@ npm i
 npm run start
 ```
 ##### Frontend app will be hosted on `http://localhost:3000`
+
+
+# Docker
+### To run backend app
+```
+git clone https://github.com/sriharikapu/capstone.git
+cd capstone
+cd app
+sudo docker build -t "backendapp:Dockerfile"
+```
+### To run frontend app
+```
+cd capstone
+cd frontend
+sudo docker build -t "frontendapp:Dockerfile"
+```
+
+
+
